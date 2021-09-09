@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "44671051449",
+    "firebase_url": "https://navipuntos-7e49d.firebaseio.com",
+    "project_id": "navipuntos-7e49d",
+    "storage_bucket": "navipuntos-7e49d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44671051449:android:5e7441e9530a7c92241d68",
+        "android_client_info": {
+          "package_name": "com.comunix.navipuntos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "44671051449-o1n1mc4se3nvoq5num64tvifnabfrhj3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.comunix.navipuntos",
+            "certificate_hash": "7563896a4f89a8ec047823b0683482e0d4cb39c6"
+          }
+        },
+        {
+          "client_id": "44671051449-4imc8s4rp40eug44k3tbftqrih2dc79m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVZRbp5cWez0eNn7Doc_88i5WBN3sQA1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "44671051449-4imc8s4rp40eug44k3tbftqrih2dc79m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

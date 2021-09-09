@@ -1,0 +1,60 @@
+name: navi_puntos
+description: A new Flutter project.
+
+#publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  lottie: any
+  splashscreen: any
+  flutter_spinning_wheel: any
+  hexcolor: any
+
+  cupertino_icons: any
+  intro_slider: any
+  http: any
+  rxdart: any
+  brily_qr_reader: any
+  dio: any
+  date_format: any
+  image_picker: any
+  fluttertoast: any
+  provider: any
+  shared_preferences: any
+  auto_size_text: any
+  flutter_launcher_icons: any
+  path_provider: any
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/icon2.jpg"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - data/menu_opts.json
+    - assets/
+    - fonts/
+
+  fonts:
+    - family: Gilroy
+      fonts:
+        - asset: fonts/Gilroy-ExtraBold.otf
+        - asset: fonts/Gilroy-Medium.otf
+        - asset: fonts/Gilroy-Light.otf
+          style: italic

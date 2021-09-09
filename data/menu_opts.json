@@ -1,0 +1,36 @@
+{
+    "nombreApp" : "Navi Puntos",
+    "rutas" : [
+        {
+            "ruta" : "perfil",
+            "icon" : "account_circle",
+            "texto": "Perfil"
+        },
+        {
+            "ruta" : "registro",
+            "icon" : "input",
+            "texto": "Registro"
+        },
+        {
+            "ruta" : "actividades",
+            "icon" : "list",
+            "texto": "Actividades"
+
+        },
+        {
+            "ruta" : "login",
+            "icon" : "accessibility_new",
+            "texto": "Login"
+        },
+        {
+            "ruta" : "inicio",
+            "icon" : "home",
+            "texto": "Inicio"
+        },
+        {
+            "ruta" : "intro",
+            "icon" : "slideshow ",
+            "texto": "Intro"
+        }
+    ]
+}
