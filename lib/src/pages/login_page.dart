@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
@@ -9,6 +10,7 @@ import 'package:navi_puntos/src/pages/inicio_page.dart';
 import 'package:navi_puntos/src/pages/splash_Page.dart';
 import 'package:navi_puntos/src/utils/constantes.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Loginpage extends StatefulWidget {
   @override
@@ -150,7 +152,6 @@ class _LoginpageState extends State<Loginpage> {
                 color: HexColor('#107ec1'),
                 fontWeight: FontWeight.w700),
             textAlign: TextAlign.center,
-            textHeightBehavior: TextHeightBehavior.fromEncoded(6),
           ),
           color: Colors.transparent,
           elevation: 0,
@@ -175,10 +176,9 @@ class _LoginpageState extends State<Loginpage> {
               fontWeight: FontWeight.w700,
             ),
             textAlign: TextAlign.center,
-            textHeightBehavior: TextHeightBehavior.fromEncoded(6),
           ),
           onPressed: () {
-            // Navigator.of(context).pushNamed('inicio');
+            _supportWsp();
           },
           color: Colors.transparent,
           elevation: 0,
@@ -238,5 +238,25 @@ class _LoginpageState extends State<Loginpage> {
     InicioPage.imagenPerfil = SplashScreen.prefs.getString("testImage");
 
     print('GUARDADO********* $value');
+  }
+
+  _supportWsp() async {
+    int phone = 573136153296;
+    String message = "Hola, Tengo un problema, olvide mi contraseña!";
+    String url() {
+      if (Platform.isAndroid) {
+        // add the [https]
+        return "https://wa.me/573136153296/?text=${Uri.parse(message)}"; // new line
+      } else {
+        // add the [https]
+        return "https://api.whatsapp.com/send?phone=$phone=${Uri.parse(message)}"; // new line
+      }
+    }
+
+    if (await canLaunch(url())) {
+      await launch(url());
+    } else {
+      throw 'Could not launch ${url()}';
+    }
   }
 }
