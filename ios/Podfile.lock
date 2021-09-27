@@ -11,11 +11,13 @@ PODS:
     - Flutter
   - path_provider (0.0.1):
     - Flutter
-  - "permission_handler (5.0.1+1)":
+  - "permission_handler (5.1.0+2)":
     - Flutter
   - shared_preferences (0.0.1):
     - Flutter
   - Toast (4.0.0)
+  - url_launcher (0.0.1):
+    - Flutter
 
 DEPENDENCIES:
   - brily_qr_reader (from `.symlinks/plugins/brily_qr_reader/ios`)
@@ -26,6 +28,7 @@ DEPENDENCIES:
   - path_provider (from `.symlinks/plugins/path_provider/ios`)
   - permission_handler (from `.symlinks/plugins/permission_handler/ios`)
   - shared_preferences (from `.symlinks/plugins/shared_preferences/ios`)
+  - url_launcher (from `.symlinks/plugins/url_launcher/ios`)
 
 SPEC REPOS:
   trunk:
@@ -48,6 +51,8 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/permission_handler/ios"
   shared_preferences:
     :path: ".symlinks/plugins/shared_preferences/ios"
+  url_launcher:
+    :path: ".symlinks/plugins/url_launcher/ios"
 
 SPEC CHECKSUMS:
   brily_qr_reader: 692d33284c952331c2f25f745cc4a2fedd36c1e0
@@ -56,9 +61,10 @@ SPEC CHECKSUMS:
   hexcolor: fdfb9c4258ad96e949c2dbcdf790a62194b8aa89
   image_picker: 9c3312491f862b28d21ecd8fdf0ee14e601b3f09
   path_provider: abfe2b5c733d04e238b0d8691db0cfd63a27a93c
-  permission_handler: eac8e15b4a1a3fba55b761d19f3f4e6b005d15b6
-  shared_preferences: 1feebfa37bb57264736e16865e7ffae7fc99b523
+  permission_handler: ccb20a9fad0ee9b1314a52b70b76b473c5f8dab0
+  shared_preferences: af6bfa751691cdc24be3045c43ec037377ada40d
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  url_launcher: 6fef411d543ceb26efce54b05a0a40bfd74cbbef
 
 PODFILE CHECKSUM: 04cf6696757f3a3fdac0d9936bc5d55b36a490d7
 
