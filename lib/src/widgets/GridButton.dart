@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:navi_puntos/src/models/imagenpuzzle.dart';
-import 'package:navi_puntos/src/pages/inicio_page.dart';
+import 'package:navi_puntos/src/pages/home/inicio_page.dart';
 import 'package:navi_puntos/src/utils/constantes.dart';
 
 class GridButton extends StatefulWidget {

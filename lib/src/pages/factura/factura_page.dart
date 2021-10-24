@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 
 import 'package:date_format/date_format.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:navi_puntos/src/pages/foto_qr_page.dart';
-import 'package:navi_puntos/src/pages/inicio_page.dart';
+import 'package:navi_puntos/src/pages/factura/foto_qr_page.dart';
+import 'package:navi_puntos/src/pages/home/inicio_page.dart';
 
 class FacturaPage extends StatefulWidget {
   final String dato;

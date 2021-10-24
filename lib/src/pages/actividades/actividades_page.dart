@@ -4,7 +4,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinning_wheel/flutter_spinning_wheel.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:navi_puntos/src/pages/inicio_page.dart';
+import 'package:navi_puntos/src/pages/home/inicio_page.dart';
 
 class ActividadesPage extends StatelessWidget {
   const ActividadesPage({Key key}) : super(key: key);

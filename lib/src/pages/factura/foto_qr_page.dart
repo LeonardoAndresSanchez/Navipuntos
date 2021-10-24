@@ -6,7 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:brily_qr_reader/brily_qr_reader.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:navi_puntos/src/pages/foto_factura_page.dart';
+import 'package:navi_puntos/src/pages/factura/foto_factura_page.dart';
 import 'package:navi_puntos/src/utils/constantes.dart';
 
 class FotoQrPage extends StatefulWidget {

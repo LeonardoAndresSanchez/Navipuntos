@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:navi_puntos/src/pages/board.dart';
+import 'package:navi_puntos/src/pages/actividades/board.dart';
 
 /* main() async {
   WidgetsFlutterBinding.ensureInitialized();

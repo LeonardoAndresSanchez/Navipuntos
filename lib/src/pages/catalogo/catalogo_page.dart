@@ -8,7 +8,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:navi_puntos/src/animations/animations.dart';
 import 'package:navi_puntos/src/models/catalogo.dart';
-import 'package:navi_puntos/src/pages/inicio_page.dart';
+import 'package:navi_puntos/src/pages/home/inicio_page.dart';
 import 'package:navi_puntos/src/utils/constantes.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';

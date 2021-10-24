@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:lottie/lottie.dart';
-import 'package:navi_puntos/src/pages/inicio_page.dart';
+import 'package:navi_puntos/src/pages/home/inicio_page.dart';
 import 'package:navi_puntos/src/utils/constantes.dart';
 import 'package:navi_puntos/src/widgets/Grid.dart';
 import 'package:navi_puntos/src/widgets/GridButton.dart';
