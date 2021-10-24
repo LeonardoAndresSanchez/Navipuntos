@@ -321,7 +321,17 @@ class _InicioPageState extends State<InicioPage> {
               borderRadius: BorderRadius.only(
                   topRight: Radius.circular(25), topLeft: Radius.circular(25)),
             ),
-            child: _lista(),
+            child: InicioPage.listJsonDecode.isEmpty
+                ? Center(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Icons.assignment_outlined),
+                        Text('Sin Actividades'),
+                      ],
+                    ),
+                  )
+                : _lista(),
           );
         });
   }
@@ -458,7 +468,17 @@ class _InicioPageState extends State<InicioPage> {
                 topLeft: Radius.circular(25),
               ),
             ),
-            child: _lista2(),
+            child: InicioPage.listJsonDecodeFinalizadas.isEmpty
+                ? Center(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Icons.assignment_outlined),
+                        Text('Sin Actividades'),
+                      ],
+                    ),
+                  )
+                : _lista2(),
           );
         });
   }
@@ -735,8 +755,6 @@ class _InicioPageState extends State<InicioPage> {
             .toList();
       }
     }
-
-    print("ASDASD");
   }
 
   _mostrarFoto() {
