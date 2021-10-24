@@ -1,12 +1,8 @@
-import 'dart:convert';
-
-import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 
 import 'package:date_format/date_format.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:navi_puntos/src/pages/factura/foto_qr_page.dart';
-import 'package:navi_puntos/src/pages/home/inicio_page.dart';
 
 class FacturaPage extends StatefulWidget {
   final String dato;
@@ -30,8 +26,7 @@ class _FacturaPageState extends State<FacturaPage> {
   final FocusNode _focusNode2 = FocusNode();
   final FocusNode _focusNode3 = FocusNode();
   final FocusNode _focusNode4 = FocusNode();
-  final FocusNode _focusNode5 = FocusNode();
-  final FocusNode _focusNode6 = FocusNode();
+
   TextEditingController _inputFieldDateController = new TextEditingController();
   @override
   Widget build(BuildContext context) {
@@ -54,6 +49,7 @@ class _FacturaPageState extends State<FacturaPage> {
         ),
       ),
       body: Form(
+        key: _formKey,
         child: ListView(
           padding: EdgeInsets.symmetric(horizontal: 22.0, vertical: 22.0),
           children: <Widget>[
@@ -134,6 +130,7 @@ class _FacturaPageState extends State<FacturaPage> {
           _nombre = valor;
         });
       },
+      // ignore: missing_return
       validator: (value) {
         if (value.isEmpty) {
           return 'Please enter some text';
@@ -231,6 +228,7 @@ class _FacturaPageState extends State<FacturaPage> {
       onChanged: (valor) => setState(() {
         _cel = valor;
       }),
+      // ignore: missing_return
       validator: (value) {
         if (value.isEmpty) {
           return 'Please enter some text';
@@ -255,6 +253,7 @@ class _FacturaPageState extends State<FacturaPage> {
       onChanged: (valor) => setState(() {
         _almacen = valor;
       }),
+      // ignore: missing_return
       validator: (value) {
         if (value.isEmpty) {
           return 'Please enter some text';
@@ -264,7 +263,7 @@ class _FacturaPageState extends State<FacturaPage> {
   }
 
   Widget _crearRegistro() {
-    return RaisedButton(
+    return MaterialButton(
       shape: new RoundedRectangleBorder(
           borderRadius: new BorderRadius.circular(15.0)),
       child: Text(

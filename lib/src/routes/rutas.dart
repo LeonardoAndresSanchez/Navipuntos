@@ -5,7 +5,6 @@ import 'package:navi_puntos/src/pages/catalogo/catalogo_page.dart';
 import 'package:navi_puntos/src/pages/factura/factura_page.dart';
 import 'package:navi_puntos/src/pages/factura/foto_factura_page.dart';
 import 'package:navi_puntos/src/pages/factura/foto_qr_page.dart';
-import 'package:navi_puntos/src/pages/home/home_page.dart';
 import 'package:navi_puntos/src/pages/home/inicio_page.dart';
 import 'package:navi_puntos/src/pages/intros/intro_juegos_ahorcado.dart';
 import 'package:navi_puntos/src/pages/intros/intro_juegos_adivinanza.dart';

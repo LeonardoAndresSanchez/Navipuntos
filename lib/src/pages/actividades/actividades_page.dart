@@ -15,12 +15,11 @@ class ActividadesPage extends StatelessWidget {
   Widget build(BuildContext context) {
     // bool girar = false;
     ActividadesPage.girar = false;
-    BuildContext context;
     return Scaffold(body: Roulette());
   }
 
   Widget buildNavigationButton({String text, Function onPressedFn}) {
-    return FlatButton(
+    return MaterialButton(
       color: Color.fromRGBO(255, 255, 255, 0.3),
       textColor: Colors.white,
       shape: RoundedRectangleBorder(
@@ -76,7 +75,7 @@ class Roulette extends StatelessWidget {
                   children: [
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: RaisedButton(
+                      child: MaterialButton(
                           color: HexColor('#107ec1'),
                           shape: new RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(10.0)),

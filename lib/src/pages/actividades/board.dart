@@ -147,7 +147,7 @@ class _BoardState extends State<Board> {
                       Image.asset('assets/dialog_win.png'),
                       SizedBox(
                         width: 220.0,
-                        child: RaisedButton(
+                        child: MaterialButton(
                           shape: new RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(10.0)),
                           onPressed: () {
@@ -195,7 +195,7 @@ class _BoardState extends State<Board> {
                       Image.asset('assets/dialog_lose2.png'),
                       SizedBox(
                         width: 220.0,
-                        child: RaisedButton(
+                        child: MaterialButton(
                           shape: new RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(10.0)),
                           onPressed: () {

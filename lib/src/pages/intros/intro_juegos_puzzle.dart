@@ -3,8 +3,6 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:intro_slider/slide_object.dart';
-import 'package:navi_puntos/src/utils/styles.dart';
 import 'package:navi_puntos/src/widgets/Grid.dart';
 
 class IntroJuegosPuzzle extends StatefulWidget {

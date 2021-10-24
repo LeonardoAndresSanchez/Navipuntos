@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:navi_puntos/src/splash/splash_Page.dart';
 import 'package:navi_puntos/src/routes/rutas.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
   // SharedPreferences.setMockInitialValues({});

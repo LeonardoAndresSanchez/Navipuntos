@@ -10,7 +10,7 @@ class Time extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(top: 12.0),
       child: Text(
-        "Intentos: ${secondsPassed}/3",
+        "Intentos: $secondsPassed/3",
         style: TextStyle(
           fontSize: 18,
           decoration: TextDecoration.none,

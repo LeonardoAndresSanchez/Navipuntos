@@ -172,7 +172,7 @@ class _Puzzle2PageState extends State<Puzzle2Page> {
                       Image.asset('assets/dialog_win.png'),
                       SizedBox(
                         width: 220.0,
-                        child: RaisedButton(
+                        child: MaterialButton(
                           shape: new RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(10.0)),
                           onPressed: () {
@@ -219,7 +219,7 @@ class _Puzzle2PageState extends State<Puzzle2Page> {
                       Image.asset('assets/dialog_lose.png'),
                       SizedBox(
                         width: 220.0,
-                        child: RaisedButton(
+                        child: MaterialButton(
                           shape: new RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(10.0)),
                           onPressed: () {

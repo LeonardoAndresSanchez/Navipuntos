@@ -39,7 +39,7 @@ class BienvenidoPage extends StatelessWidget {
                   right: 50,
                 ),
                 height: size.height * 0.06,
-                child: RaisedButton(
+                child: MaterialButton(
                   color: Colors.white,
                   shape: new RoundedRectangleBorder(
                       borderRadius: new BorderRadius.circular(12.0)),

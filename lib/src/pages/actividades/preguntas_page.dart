@@ -76,7 +76,7 @@ class _PreguntasPageState extends State<PreguntasPage> {
                       Container(
                         width: 400,
                         height: 48,
-                        child: RaisedButton(
+                        child: MaterialButton(
                           elevation: 5,
                           shape: new RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(15.0)),
@@ -105,7 +105,7 @@ class _PreguntasPageState extends State<PreguntasPage> {
                       Container(
                         width: 400,
                         height: 48,
-                        child: RaisedButton(
+                        child: MaterialButton(
                           elevation: 5,
                           shape: new RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(15.0)),
@@ -134,7 +134,7 @@ class _PreguntasPageState extends State<PreguntasPage> {
                       Container(
                         width: 400,
                         height: 48,
-                        child: RaisedButton(
+                        child: MaterialButton(
                           elevation: 5,
                           shape: new RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(15.0)),
@@ -163,7 +163,7 @@ class _PreguntasPageState extends State<PreguntasPage> {
                       Container(
                         width: 400,
                         height: 48,
-                        child: RaisedButton(
+                        child: MaterialButton(
                           elevation: 5,
                           shape: new RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(15.0)),
@@ -220,7 +220,7 @@ class _PreguntasPageState extends State<PreguntasPage> {
                       Image.asset('assets/dialog_win.png'),
                       SizedBox(
                         width: 220.0,
-                        child: RaisedButton(
+                        child: MaterialButton(
                           shape: new RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(10.0)),
                           onPressed: () {
@@ -267,7 +267,7 @@ class _PreguntasPageState extends State<PreguntasPage> {
                       Image.asset('assets/dialog_lose.png'),
                       SizedBox(
                         width: 220.0,
-                        child: RaisedButton(
+                        child: MaterialButton(
                           shape: new RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(10.0)),
                           onPressed: () {

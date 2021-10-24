@@ -9,7 +9,7 @@ class ResetButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return RaisedButton(
+    return MaterialButton(
       onPressed: reset,
       color: Colors.blue,
       shape: RoundedRectangleBorder(

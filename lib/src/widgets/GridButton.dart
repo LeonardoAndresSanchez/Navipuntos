@@ -43,7 +43,7 @@ class _GridButtonState extends State<GridButton> {
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        RaisedButton(
+        MaterialButton(
           padding: EdgeInsets.symmetric(vertical: 0.5, horizontal: 0.5),
           elevation: 1,
           child: _cargarImagenPuzzle(context, widget.text),

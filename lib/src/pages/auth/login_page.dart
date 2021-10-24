@@ -124,7 +124,7 @@ class _LoginpageState extends State<Loginpage> {
   }
 
   Widget _crearRegistro() {
-    return RaisedButton(
+    return MaterialButton(
       shape: new RoundedRectangleBorder(
           borderRadius: new BorderRadius.circular(10.0)),
       child: Text(
@@ -144,7 +144,7 @@ class _LoginpageState extends State<Loginpage> {
   Widget _registro() {
     return Center(
       child: Container(
-        child: RaisedButton(
+        child: MaterialButton(
           child: Text(
             'REGISTRARSE',
             style: TextStyle(
@@ -168,7 +168,7 @@ class _LoginpageState extends State<Loginpage> {
     return Center(
       child: Container(
         padding: EdgeInsets.only(top: 10),
-        child: RaisedButton(
+        child: MaterialButton(
           child: Text(
             'OLVIDÉ MI CONTRASEÑA',
             style: TextStyle(

@@ -118,7 +118,7 @@ class PreguntasPageState2 extends State<PreguntasPage2> {
                       Image.asset('assets/dialog_win.png'),
                       SizedBox(
                         width: 220.0,
-                        child: RaisedButton(
+                        child: MaterialButton(
                           shape: new RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(10.0)),
                           onPressed: () {
@@ -166,7 +166,7 @@ class PreguntasPageState2 extends State<PreguntasPage2> {
                       Image.asset('assets/dialog_lose.png'),
                       SizedBox(
                         width: 220.0,
-                        child: RaisedButton(
+                        child: MaterialButton(
                           shape: new RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(10.0)),
                           onPressed: () {
@@ -254,7 +254,7 @@ class PreguntasPageState2 extends State<PreguntasPage2> {
               child: Container(
                 width: size.width * 0.27,
                 height: size.height * 0.069,
-                child: RaisedButton(
+                child: MaterialButton(
                   elevation: 0,
                   shape: new RoundedRectangleBorder(
                       borderRadius: new BorderRadius.circular(12.0)),
@@ -312,7 +312,7 @@ class PreguntasPageState2 extends State<PreguntasPage2> {
             child: Container(
               width: size.width * 0.27,
               height: size.height * 0.069,
-              child: RaisedButton(
+              child: MaterialButton(
                 elevation: 0,
                 shape: new RoundedRectangleBorder(
                     borderRadius: new BorderRadius.circular(12.0)),

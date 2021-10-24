@@ -311,7 +311,7 @@ class _RegistroPageState extends State<RegistroPage> {
   }
 
   Widget _crearRegistro() {
-    return RaisedButton(
+    return MaterialButton(
       shape: new RoundedRectangleBorder(
           borderRadius: new BorderRadius.circular(10.0)),
       child: Text(

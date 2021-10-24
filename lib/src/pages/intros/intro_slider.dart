@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:intro_slider/slide_object.dart';
 import 'package:navi_puntos/src/utils/styles.dart';
 
 class IntroSlider extends StatefulWidget {

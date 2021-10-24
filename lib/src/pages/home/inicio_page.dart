@@ -1,7 +1,5 @@
 import 'dart:convert';
 import 'dart:io';
-import 'dart:math';
-
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
@@ -18,20 +16,19 @@ import 'package:navi_puntos/src/splash/splash_Page.dart';
 import 'package:navi_puntos/src/utils/constantes.dart';
 import 'package:navi_puntos/src/utils/styles.dart';
 import 'package:navi_puntos/src/animations/animations.dart';
-import 'package:navi_puntos/src/widgets/GridButton.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:path/path.dart';
 
 class InicioPage extends StatefulWidget {
-  static List<PalabraActividad> listaAhorcado = new List();
-  static List<ImagenPuzzle> listaPuzzle = new List();
-  static List<Trivia> listaTrivia = new List();
-  static List<PreguntaSeleccionMultiple> listaPreguntas = new List();
-  static List<RespuestaPregunta> listaRespuestas = new List();
-  static List listJsonDecode = new List();
-  static List listJsonDecodeFinalizadas = new List();
-  static List listaPuntos = new List();
+  static List<PalabraActividad> listaAhorcado = [];
+  static List<ImagenPuzzle> listaPuzzle = [];
+  static List<Trivia> listaTrivia = [];
+  static List<PreguntaSeleccionMultiple> listaPreguntas = [];
+  static List<RespuestaPregunta> listaRespuestas = [];
+  static List listJsonDecode = [];
+  static List listJsonDecodeFinalizadas = [];
+  static List listaPuntos = [];
   static String idUsuarioActividad;
   static List<User> listaUser;
   static String imagenPerfil = "";
@@ -48,6 +45,7 @@ class _InicioPageState extends State<InicioPage> {
     // _consultarPuntos();
     // _consultarDatosGardados();
     // textoPuntos();
+    super.initState();
   }
 
   var opciones = [
@@ -258,7 +256,7 @@ class _InicioPageState extends State<InicioPage> {
                   width: 200,
                   height: size.height * 0.07,
                   padding: const EdgeInsets.all(3.0),
-                  child: RaisedButton(
+                  child: MaterialButton(
                     shape: new RoundedRectangleBorder(
                       borderRadius: new BorderRadius.circular(12.0),
                     ),
@@ -281,7 +279,7 @@ class _InicioPageState extends State<InicioPage> {
                   width: 200,
                   height: size.height * 0.07,
                   padding: const EdgeInsets.all(3.0),
-                  child: RaisedButton(
+                  child: MaterialButton(
                     shape: new RoundedRectangleBorder(
                       borderRadius: new BorderRadius.circular(12.0),
                     ),
@@ -335,7 +333,7 @@ class _InicioPageState extends State<InicioPage> {
   }
 
   List<Widget> _crearLista() {
-    List<Widget> lista = new List();
+    List<Widget> lista = [];
     for (var i = 0; i < InicioPage.listJsonDecode.length; i++) {
       if (InicioPage.listJsonDecode[i]["idTipoActividad"] == "1") {
         lista.add(
@@ -473,7 +471,7 @@ class _InicioPageState extends State<InicioPage> {
   }
 
   List<Widget> _crearLista2() {
-    List<Widget> lista = new List();
+    List<Widget> lista = [];
     for (var i = 0; i < InicioPage.listJsonDecodeFinalizadas.length; i++) {
       if (InicioPage.listJsonDecodeFinalizadas[i]["idTipoActividad"] == "1") {
         lista.add(
@@ -633,7 +631,7 @@ class _InicioPageState extends State<InicioPage> {
           padding: const EdgeInsets.all(18.0),
           child: Align(
             alignment: Alignment.bottomCenter,
-            child: FlatButton(
+            child: MaterialButton(
               child: Text(
                 'Ok',
                 style: TextStyle(
@@ -742,7 +740,7 @@ class _InicioPageState extends State<InicioPage> {
   }
 
   _mostrarFoto() {
-    final key = 'testImage';
+    // final key = 'testImage';
     return GestureDetector(
         child: Stack(
           children: [
